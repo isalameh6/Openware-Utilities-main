@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Openware.Security.ActiveDirectory", "src\Openware.Security.ActiveDirectory\Openware.Security.ActiveDirectory.csproj", "{D0A0E21E-DF05-4D1D-9CFB-27296CCB0E65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AB3FBADE-4AE1-46D6-A6ED-BBA32A449CE3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Openware.Security.ActiveDirectory.Test", "test\ActiveDirectoryManagerTest\Openware.Security.ActiveDirectory.Test.csproj", "{4594F0AB-CE85-436F-AFF1-626FB439B0C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3B2EE3BE-ADF9-4549-B137-BEC1694B33CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Openware.Security.Encryption", "src\Openware.Security.Encryption\Openware.Security.Encryption.csproj", "{F336E9E7-154B-4D88-9A32-B75DA67E8D51}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Openware.Security.Encryption.Test", "test\EncryptionTest\Openware.Security.Encryption.Test.csproj", "{81FE7A24-F7AF-4550-BE68-2374D01D7DF6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Openware.Security.Jwt", "src\Openware.Security.Jwt\Openware.Security.Jwt.csproj", "{97F6DAF8-7546-40D1-908A-5BF06ACC2A82}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Openware.Core", "src\Openware.Core\Openware.Core.csproj", "{3AA91DEC-4E49-43FB-87BF-41961DB8B467}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{FA4A23EC-31DF-4CAD-A34F-0096DC089B3F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Openware.WebApi", "src\Openware.WebApi.Extensions\Openware.WebApi.csproj", "{60CA20D8-B2D6-4F17-8213-D0B3500456D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Openware.WebApi.Swagger", "src\Openware.WebApi.Swagger\Openware.WebApi.Swagger.csproj", "{83AA06CB-FE6D-41EC-9783-9513564C7BAF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PasswordHashing", "Console\PasswordHashing\PasswordHashing.csproj", "{3F167CCF-32D6-43B0-A046-2157C570D154}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordEncryption", "Console\PasswordEncryption\PasswordEncryption.csproj", "{E15BA2B6-6728-41CD-87D0-DA051FD84A3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0A0E21E-DF05-4D1D-9CFB-27296CCB0E65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0A0E21E-DF05-4D1D-9CFB-27296CCB0E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0A0E21E-DF05-4D1D-9CFB-27296CCB0E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0A0E21E-DF05-4D1D-9CFB-27296CCB0E65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4594F0AB-CE85-436F-AFF1-626FB439B0C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4594F0AB-CE85-436F-AFF1-626FB439B0C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4594F0AB-CE85-436F-AFF1-626FB439B0C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4594F0AB-CE85-436F-AFF1-626FB439B0C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F336E9E7-154B-4D88-9A32-B75DA67E8D51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F336E9E7-154B-4D88-9A32-B75DA67E8D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F336E9E7-154B-4D88-9A32-B75DA67E8D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F336E9E7-154B-4D88-9A32-B75DA67E8D51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81FE7A24-F7AF-4550-BE68-2374D01D7DF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81FE7A24-F7AF-4550-BE68-2374D01D7DF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81FE7A24-F7AF-4550-BE68-2374D01D7DF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81FE7A24-F7AF-4550-BE68-2374D01D7DF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97F6DAF8-7546-40D1-908A-5BF06ACC2A82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97F6DAF8-7546-40D1-908A-5BF06ACC2A82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97F6DAF8-7546-40D1-908A-5BF06ACC2A82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97F6DAF8-7546-40D1-908A-5BF06ACC2A82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AA91DEC-4E49-43FB-87BF-41961DB8B467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AA91DEC-4E49-43FB-87BF-41961DB8B467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AA91DEC-4E49-43FB-87BF-41961DB8B467}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AA91DEC-4E49-43FB-87BF-41961DB8B467}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60CA20D8-B2D6-4F17-8213-D0B3500456D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60CA20D8-B2D6-4F17-8213-D0B3500456D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60CA20D8-B2D6-4F17-8213-D0B3500456D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60CA20D8-B2D6-4F17-8213-D0B3500456D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83AA06CB-FE6D-41EC-9783-9513564C7BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83AA06CB-FE6D-41EC-9783-9513564C7BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83AA06CB-FE6D-41EC-9783-9513564C7BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83AA06CB-FE6D-41EC-9783-9513564C7BAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F167CCF-32D6-43B0-A046-2157C570D154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F167CCF-32D6-43B0-A046-2157C570D154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F167CCF-32D6-43B0-A046-2157C570D154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F167CCF-32D6-43B0-A046-2157C570D154}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E15BA2B6-6728-41CD-87D0-DA051FD84A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E15BA2B6-6728-41CD-87D0-DA051FD84A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E15BA2B6-6728-41CD-87D0-DA051FD84A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E15BA2B6-6728-41CD-87D0-DA051FD84A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D0A0E21E-DF05-4D1D-9CFB-27296CCB0E65} = {AB3FBADE-4AE1-46D6-A6ED-BBA32A449CE3}
+		{4594F0AB-CE85-436F-AFF1-626FB439B0C9} = {3B2EE3BE-ADF9-4549-B137-BEC1694B33CD}
+		{F336E9E7-154B-4D88-9A32-B75DA67E8D51} = {AB3FBADE-4AE1-46D6-A6ED-BBA32A449CE3}
+		{81FE7A24-F7AF-4550-BE68-2374D01D7DF6} = {3B2EE3BE-ADF9-4549-B137-BEC1694B33CD}
+		{97F6DAF8-7546-40D1-908A-5BF06ACC2A82} = {AB3FBADE-4AE1-46D6-A6ED-BBA32A449CE3}
+		{3AA91DEC-4E49-43FB-87BF-41961DB8B467} = {AB3FBADE-4AE1-46D6-A6ED-BBA32A449CE3}
+		{60CA20D8-B2D6-4F17-8213-D0B3500456D3} = {AB3FBADE-4AE1-46D6-A6ED-BBA32A449CE3}
+		{83AA06CB-FE6D-41EC-9783-9513564C7BAF} = {AB3FBADE-4AE1-46D6-A6ED-BBA32A449CE3}
+		{3F167CCF-32D6-43B0-A046-2157C570D154} = {FA4A23EC-31DF-4CAD-A34F-0096DC089B3F}
+		{E15BA2B6-6728-41CD-87D0-DA051FD84A3E} = {FA4A23EC-31DF-4CAD-A34F-0096DC089B3F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {765D5025-E2DA-495E-9E8A-31151A439ECD}
+	EndGlobalSection
+EndGlobal

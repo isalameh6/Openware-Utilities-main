@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<VersionPrefix>1.0.4</VersionPrefix>
+		<AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
+		<FileVersion>$(VersionPrefix)</FileVersion>
+		<AssemblyName>Openware.WebApi.Swagger</AssemblyName>
+		<RootNamespace>Openware.WebApi.Swagger</RootNamespace>
+		<Company>Openware Information Systems Consulting Company </Company>
+		<Description>Library that provides extensions on top of Swagger</Description>
+		<Copyright>$(Company)</Copyright>
+		<RepositoryUrl>https://github.com/openware-informaiton-systems-company/Openware-Utilities</RepositoryUrl>
+		<Title>Openware WebApi Swagger Extensions</Title>
+		<Authors>Ahmad Hamdan</Authors>
+		<PackageOutputPath>$(SolutionDir)pack-files</PackageOutputPath>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<NoWarn>1701;1702;1591</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<NoWarn>1701;1702;1591</NoWarn>
+	</PropertyGroup>
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App"></FrameworkReference>
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\Openware.Core\Openware.Core.csproj" />
+	</ItemGroup>
+</Project>

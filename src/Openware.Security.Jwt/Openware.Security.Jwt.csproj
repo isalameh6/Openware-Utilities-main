@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<VersionPrefix>1.0.2</VersionPrefix>
+		<AssemblyName>Openware.Security.Jwt</AssemblyName>
+		<RootNamespace>Openware.Security.Jwt</RootNamespace>
+		<Company>Openware Information Systems Consulting Company </Company>
+		<Description>Provides an implementation for token generation</Description>
+		<Copyright>$(Company)</Copyright>
+		<AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
+		<Title>Token Generation</Title>
+		<Authors>Ahmad Hamdan</Authors>
+		<RepositoryUrl>https://github.com/openware-informaiton-systems-company/Openware-Utilities</RepositoryUrl>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<FileVersion>$(VersionPrefix)</FileVersion>
+		<PackageOutputPath>$(SolutionDir)pack-files</PackageOutputPath>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <NoWarn>1701;1702;1591</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <NoWarn>1701;1702;1591</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.25.1" />
+	</ItemGroup>
+
+</Project>

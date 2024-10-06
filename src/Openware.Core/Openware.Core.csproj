@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<VersionPrefix>1.0.4</VersionPrefix>
+		<AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
+		<FileVersion>$(VersionPrefix)</FileVersion>
+		<AssemblyName>Openware.Core</AssemblyName>
+		<RootNamespace>Openware.Core</RootNamespace>
+		<Company>Openware Information Systems Consulting Company </Company>
+		<Description>Core library for Openware shared features</Description>
+		<Copyright>$(Company)</Copyright>
+		<RepositoryUrl>https://github.com/openware-informaiton-systems-company/Openware-Utilities</RepositoryUrl>
+		<Title>Openware Core Library</Title>
+		<Authors>Ahmad Hamdan</Authors>
+		<PackageOutputPath>$(SolutionDir)pack-files</PackageOutputPath>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <NoWarn>1701;1702;1591</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <NoWarn>1701;1702;1591</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Remove="Localization\Resources.ar.resx" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Localization\Resources.ar.resx">
+			<Generator></Generator>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Localization\Resources.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Localization\Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+			<CustomToolNamespace>Openware.Core</CustomToolNamespace>
+		</EmbeddedResource>
+	</ItemGroup>
+
+</Project>
